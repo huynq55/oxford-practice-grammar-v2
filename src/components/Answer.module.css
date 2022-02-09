@@ -1,0 +1,19 @@
+.answer {
+  font-weight: 800;
+}
+
+.inputAnswer {
+  border: none;
+  border-bottom: thin dashed black;
+  outline: none;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.right {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}

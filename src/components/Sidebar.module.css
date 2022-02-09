@@ -1,0 +1,81 @@
+.sidebar {
+  background-color: rgb(255, 255, 255, 255);
+  flex: 2;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@media screen and (max-width: 575px) {
+  .sidebar {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transition: 0.5s;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+.toggleButton {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 576px) {
+  .sidebar {
+    max-width: 300px;
+  }
+
+  .toggleButton {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change2 {
+  opacity: 0;
+}
+
+.change3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.linkCss {
+  color: #1a1a1a;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s ease;
+  margin-top: 5px;
+  text-decoration: none;
+}

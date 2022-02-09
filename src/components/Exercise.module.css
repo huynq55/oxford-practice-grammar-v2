@@ -1,0 +1,10 @@
+.exerciseIntroduction {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+.exerciseLetter {
+  font-weight: 800;
+  color: orange;
+  font-size: 1.17em;
+}
