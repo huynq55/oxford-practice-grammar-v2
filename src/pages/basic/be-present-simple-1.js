@@ -66,7 +66,7 @@ const Unit1 = (props) => {
         >
           <Example /> I <Answer answer={["'m"]} isRevealed /> a doctor.
           <br />
-          <Example />I <Answer answer={["'m not"]} isRevealed /> (not) a bank
+          <Example /> I <Answer answer={["'m not"]} isRevealed /> (not) a bank
           manager.
           <br />
           1. She <Answer answer={["isn't"]} /> (not) a teacher.
@@ -154,7 +154,7 @@ const Unit1 = (props) => {
             ]}
             strikethrough={[3, 6]}
           />
-          <div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <div>
               <Example />
               <StaticImage
@@ -290,32 +290,32 @@ const Unit1 = (props) => {
                 answer={["I'm a dentist and Akira is a photographer."]}
                 textFieldSize={20}
               />
-              <div>
-                5.{' '}
-                <StaticImage
-                  src='./images/unit1/1D6.PNG'
-                  className={img}
-                  alt=''
-                />
-                <br />
-                names:
-                <br />
-                <Answer
-                  answer={["I'm Rajiv and this is Vikram."]}
-                  textFieldSize={20}
-                />
-                <br />
-                nationality:
-                <br />
-                <Answer answer={["We're from India."]} textFieldSize={20} />
-                <br />
-                jobs:
-                <br />
-                <Answer
-                  answer={["I'm a scientist and Vikram is a farmer."]}
-                  textFieldSize={20}
-                />
-              </div>
+            </div>
+            <div>
+              5.{' '}
+              <StaticImage
+                src='./images/unit1/1D6.PNG'
+                className={img}
+                alt=''
+              />
+              <br />
+              names:
+              <br />
+              <Answer
+                answer={["I'm Rajiv and this is Vikram."]}
+                textFieldSize={20}
+              />
+              <br />
+              nationality:
+              <br />
+              <Answer answer={["We're from India."]} textFieldSize={20} />
+              <br />
+              jobs:
+              <br />
+              <Answer
+                answer={["I'm a scientist and Vikram is a farmer."]}
+                textFieldSize={20}
+              />
             </div>
           </div>
         </Exercise>

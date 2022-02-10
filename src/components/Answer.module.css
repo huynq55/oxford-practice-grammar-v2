@@ -3,6 +3,10 @@
   margin-left: 5px;
 }
 
+.answerInExample {
+  font-weight: 800;
+}
+
 .inputAnswer {
   border: none;
   border-bottom: thin dashed black;
@@ -17,8 +21,4 @@
 
 .wrong {
   color: red;
-}
-
-.button {
-  margin-left: 5px;
 }

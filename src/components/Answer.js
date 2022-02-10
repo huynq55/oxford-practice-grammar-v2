@@ -1,5 +1,11 @@
 import React, { Fragment, useRef, useState } from 'react';
-import { answer, inputAnswer, right, wrong, button } from './Answer.module.css';
+import {
+  answer,
+  inputAnswer,
+  right,
+  wrong,
+  answerInExample,
+} from './Answer.module.css';
 
 function Answer(props) {
   const textField = useRef(null);
@@ -30,7 +36,7 @@ function Answer(props) {
   return (
     <Fragment>
       {props.isRevealed ? (
-        <span className={answer}>{props.answer.join('/')}</span>
+        <span className={answerInExample}>{props.answer.join('/')}</span>
       ) : (
         <input
           type='text'
@@ -40,23 +46,32 @@ function Answer(props) {
         />
       )}
       {renderResult(result)}
-      {show ? <span className={answer}>{props.answer.join('/')}</span> : null}
       {!props.isRevealed ? (
-        <div style={{ display: 'inline' }}>
-          <button onClick={checkAnswer} className={button}>
+        <div style={{ display: 'inline-block' }} className='my-1'>
+          <button
+            onClick={checkAnswer}
+            className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+          >
             Check
           </button>
           {!show ? (
-            <button onClick={showAnswer} className={button}>
+            <button
+              onClick={showAnswer}
+              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+            >
               Show
             </button>
           ) : (
-            <button onClick={hideAnswer} className={button}>
+            <button
+              onClick={hideAnswer}
+              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+            >
               Hide
             </button>
           )}
         </div>
       ) : null}
+      {show ? <span className={answer}>{props.answer.join('/')}</span> : null}
     </Fragment>
   );
 }
