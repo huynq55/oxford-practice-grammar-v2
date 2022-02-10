@@ -1,0 +1,12 @@
+.boxOfWord {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 99.8%;
+  justify-content: center;
+}
+
+.word {
+  flex-basis: 170px;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 .answer {
   font-weight: 800;
+  margin-left: 5px;
 }
 
 .inputAnswer {
@@ -16,4 +17,8 @@
 
 .wrong {
   color: red;
+}
+
+.button {
+  margin-left: 5px;
 }

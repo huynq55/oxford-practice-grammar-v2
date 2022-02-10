@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState } from 'react';
-import { answer, inputAnswer, right, wrong } from './Answer.module.css';
+import { answer, inputAnswer, right, wrong, button } from './Answer.module.css';
 
 function Answer(props) {
   const textField = useRef(null);
@@ -32,17 +32,28 @@ function Answer(props) {
       {props.isRevealed ? (
         <span className={answer}>{props.answer.join('/')}</span>
       ) : (
-        <input type='text' className={inputAnswer} ref={textField} />
+        <input
+          type='text'
+          className={inputAnswer}
+          ref={textField}
+          size={props.textFieldSize === undefined ? 5 : props.textFieldSize}
+        />
       )}
       {renderResult(result)}
-      {show ? <span className={answer}> {props.answer.join('/')}</span> : null}
+      {show ? <span className={answer}>{props.answer.join('/')}</span> : null}
       {!props.isRevealed ? (
         <div style={{ display: 'inline' }}>
-          <button onClick={checkAnswer}>Check</button>
+          <button onClick={checkAnswer} className={button}>
+            Check
+          </button>
           {!show ? (
-            <button onClick={showAnswer}>Show</button>
+            <button onClick={showAnswer} className={button}>
+              Show
+            </button>
           ) : (
-            <button onClick={hideAnswer}>Hide</button>
+            <button onClick={hideAnswer} className={button}>
+              Hide
+            </button>
           )}
         </div>
       ) : null}

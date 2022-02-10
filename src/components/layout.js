@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import {
   container,
@@ -10,9 +10,6 @@ import {
 } from './layout.module.css';
 
 const Layout = ({ pageTitle, sidebar, children }) => {
-  useEffect(() => {
-    document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-  }, []);
   return (
     <div className={container}>
       <title>{pageTitle}</title>

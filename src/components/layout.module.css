@@ -25,8 +25,8 @@
 
 .main {
   flex: 3;
-  overflow-y: auto;
-  height: 100vh;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
 }
 
 .noscroll {
