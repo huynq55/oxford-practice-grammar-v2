@@ -50,21 +50,21 @@ function Answer(props) {
         <div style={{ display: 'inline-block' }} className='my-1'>
           <button
             onClick={checkAnswer}
-            className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+            className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5 w-20'
           >
             Check
           </button>
           {!show ? (
             <button
               onClick={showAnswer}
-              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5 w-20'
             >
               Show
             </button>
           ) : (
             <button
               onClick={hideAnswer}
-              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5'
+              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5 w-20'
             >
               Hide
             </button>
