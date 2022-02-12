@@ -45,9 +45,9 @@ function Answer(props) {
           size={props.textFieldSize === undefined ? 5 : props.textFieldSize}
         />
       )}
-      {renderResult(result)}
       {!props.isRevealed ? (
         <div style={{ display: 'inline-block' }} className='my-1'>
+          {renderResult(result)}
           <button
             onClick={checkAnswer}
             className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-0.5 w-20'
