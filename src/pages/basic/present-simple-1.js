@@ -175,6 +175,145 @@ const Unit1 = (props) => {
           />
           <br />
         </Exercise>
+        <Exercise
+          letter='D'
+          introduction={
+            <Fragment>
+              Put in the verbs from the box, in the Present Simple. Use each
+              verb once.
+            </Fragment>
+          }
+        >
+          <BoxOfWord
+            words={[
+              'leave',
+              'start',
+              'arrive',
+              'get',
+              'watch',
+              'work',
+              'brush',
+              'eat',
+              'have',
+              'like',
+              'drink',
+              'go',
+              'stop',
+            ]}
+            strikethrough={[3]}
+          />
+          Interviewer: How do you start the day, Jim?
+          <br />
+          Jim: Well, I (<Example />) <Answer answer={['get']} isRevealed /> up
+          at six o'clock. I get washed and dressed, and I (1){' '}
+          <Answer answer={['eat']} /> breakfast at seven o'clock. After
+          breakfast, I (2) <Answer answer={['brush']} /> my teeth. I (3){' '}
+          <Answer answer={['go']} /> to work at eight.
+          <br />
+          Interviewer: When do you get to work?
+          <br />
+          Jim: I usually (4) <Answer answer={['arrive']} /> at my office at
+          about half past eight. First, I (5){' '}
+          <Answer answer={['drink', 'have']} /> a cup of coffee, and then I (6){' '}
+          <Answer answer={['start']} /> work at 8.45 a.m.
+          <br />
+          Interviewer: Where do you work?
+          <br />
+          Jim: I (7) <Answer answer={['work']} /> in a bank. I am a computer
+          operator. I (8) <Answer answer={['like']} /> my job. It's very
+          interesting.
+          <br />
+          Interviewer: When do you eat lunch?
+          <br />
+          Jim: I (9) <Answer answer={['finish']} /> work and I have lunch at one
+          o'clock. I (10) <Answer answer={['drink', 'have']} /> a cup of tea at
+          half past three.
+          <br />
+          Interviewer: When do you finish work?
+          <br />
+          Jim: I (11) <Answer answer={['leave']} /> the office at six o'clock. I
+          eat dinner when I get home. Then I (12) <Answer answer={['watch']} />{' '}
+          TV for an hour or two.
+        </Exercise>
+        <Exercise
+          letter='E'
+          introduction={
+            <Fragment>
+              Use the table to write facts about Joan. A tick ({'\u2713'}) means
+              that something is true. A cross ({'\u2717'}) means that something
+              is not true. Use the verbs in brackets ( ).
+            </Fragment>
+          }
+        >
+          <BoxOfWord
+            words={[
+              <Fragment>
+                <Example /> from Scotland {'\u2713'} from England {'\u2717'}
+              </Fragment>,
+              <Fragment>
+                1. in a bank {'\u2717'} in a shop {'\u2713'}
+              </Fragment>,
+              <Fragment>
+                2. in a flat {'\u2713'} in a house {'\u2717'}
+              </Fragment>,
+              <Fragment>
+                3. French {'\u2713'} Italian {'\u2717'}
+              </Fragment>,
+              <Fragment>
+                4. new films {'\u2717'} old films {'\u2713'}
+              </Fragment>,
+            ]}
+            strikethrough={[]}
+          />
+          <Example /> (come)
+          <br />
+          <Answer answer={['She comes from Scotland.']} isRevealed />
+          <br />
+          <Answer answer={["She doesn't come from England."]} isRevealed />
+          <br />
+          1 (work)
+          <br />
+          She{' '}
+          <Answer
+            answer={["doesn't work", 'does not work']}
+            textFieldSize={10}
+          />{' '}
+          in a bank.
+          <br />
+          She <Answer answer={['works']} textFieldSize={10} /> in a shop.
+          <br />2 (live)
+          <br />
+          She <Answer answer={['lives in a flat.']} textFieldSize={20} />
+          <br />
+          She{' '}
+          <Answer
+            answer={["doesn't live in a house.", 'does not live in a house.']}
+            textFieldSize={20}
+          />
+          <br />3 (speak)
+          <br />
+          <Answer answer={['She speaks French.']} textFieldSize={20} />
+          <br />
+          <Answer
+            answer={[
+              "She doesn't speak Italian.",
+              'She does not speak Italian.',
+            ]}
+            textFieldSize={20}
+          />
+          <br />
+          4 (like)
+          <br />
+          <Answer
+            answer={[
+              "She doesn't like new films.",
+              'She does not like new films.',
+            ]}
+            textFieldSize={20}
+          />
+          <br />
+          <Answer answer={['She likes old films.']} textFieldSize={20} />
+        </Exercise>
       </Unit>
     </Layout>
   );
